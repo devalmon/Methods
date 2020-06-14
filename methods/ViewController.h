@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
++ (void)count;
+
+- (void)sayHello;
+- (void)say: (NSString *)name;
 
 @end
 

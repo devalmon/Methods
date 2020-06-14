@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class MyObject;
+
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
 @property (strong, nonatomic) UIWindow * window;
+
+@property (strong, nonatomic) MyObject * obj;
 
 @end
 

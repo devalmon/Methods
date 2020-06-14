@@ -14,10 +14,31 @@
 
 @implementation ViewController
 
++ (void)count {
+    NSLog(@"10");
+}
+
+- (NSString *) sayDate {
+    return [NSString stringWithFormat:@"%@", [NSDate date]];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor systemPinkColor];
+//    NSLog(@"desc: %@", self.description);
 }
+
+- (void)sayHello {
+    NSLog(@"hi");
+}
+
+- (void)say: (NSString *)name {
+    NSLog(@"hi %@", name);
+    NSString *date = [self sayDate];
+    NSLog(@"date is %@", date);
+}
+
 
 
 @end
